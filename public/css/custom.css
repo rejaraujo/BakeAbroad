@@ -1,6 +1,8 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    background-image: url('https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/images.png');
     /* background-image: url('../images/pattern.png'); */
     background-repeat: repeat;
 }
+
