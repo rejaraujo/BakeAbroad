@@ -1,176 +1,130 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bake Abroad</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-        crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/css/custom.css">
-</head>
-
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-md">
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="nav navbar-nav mr-auto">
-                    <a class="navbar-brand" href="#">
-                        <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/Gemini_Generated_Image%20(2).jpeg" 
-                        alt="BakeAbroad Logo" style="max-width: 150px;>
-                    </a>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.ejs">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="recipes.ejs">Recipes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="workshop.ejs">Workshop</a>
-                    </li>
-                </ul>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bake Abroad | Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+      <link rel="stylesheet" type="text/css" href="/css/custom.css">
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <h2 class="fs-1 fw-bold" ><%=title%></h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fs-4  active" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 " href="/recipes"> Recipes </a>
+            </li>
+          </ul>
         </div>
-        </nav>
+      </div>
     </header>
-    <main role="main">
-    <!-- responsive container -lg below it, it takes full screen -->
-   <div class="container-md pt-5 mt-5"> 
-    <div class="row">
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-                <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/French%20Rolls.jpg" 
-          alt="French Rolls" width="100%" >
-          <div>
-            <h5 class="entry-title">FRENCH ROLLS</h5>
-          </div>
+    <div class="container-fluid pt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>About us</h2>
+          <p class="fs-4 pt-5">
+            Welcome to Bake Abroad, a haven for home bakers and fellow
+            adventurers! My name is Jaine, and baking has always been my
+            passion. But this blog isn't just about delicious treats; it's about
+            embracing new beginnings and finding joy in the unexpected.
+          </p>
         </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-                <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt083_pao-de-parmesao-com-oregano_receita02.jpg" 
-          alt="Parmesan Oregano Bread" width="100%" >
-          <div>
-            <h5 class="entry-title">PARMESAN OREGANO BREAD</h5>
-          </div>
-        </div>
-        
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-                <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt-055_pao-de-alho_receita.jpg" 
-          alt="Garlic Bread" width="100%"  >
-          <div>
-            <h5 class="entry-title">GARLIC BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-                <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt-042_pao-frances-de-hamburguer_receita-300x193.jpg" 
-          alt="Savory Hamburguer Buns" width="100%" >
-          <div>
-            <h5 class="entry-title">FRENCH HAMBURGUER BUNS</h5>
-          </div>
-        </div>
-
-<!-- stuffed -->
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt-054_enroladinho-de-salsicha_receita.jpg" 
-          alt="Pigs in a blanket" width="100%" >
-          <div>
-            <h5 class="entry-title">PIGS IN A BLANKET</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/receita-joelho-ou-enroladinho.jpg" 
-          alt="Ham & Cheese Stuffed Bread" width="100%" >
-          <div>
-            <h5 class="entry-title">HAM & CHEESE STUFFED BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/focaccia_1200x800-300x200.jpg" 
-          alt="Focaccia" width="100%" >
-          <div>
-            <h5 class="entry-title">FOCACCIA</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt084_focaccia-de-batata_receita.jpg" 
-          alt="Potato Focaccia" width="100%" >
-          <div>
-            <h5 class="entry-title">POTATO FOCACCIA</h5>
-          </div>
-        </div>
-    
-        <!-- loaves -->
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt094_pao-de-espinafre_receita_02.jpg" 
-          alt="Spinach Loaf Bread
-          " width="100%" >
-          <div>
-            <h5 class="entry-title">SPINACH BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt078_pao-de-cenoura_receita.jpg" 
-          alt="Carrot Loaf Bread" width="100%" >
-          <div>
-            <h5 class="entry-title">CARROT BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/receita_pao-australiano_IMG_4239-300x200.jpg" 
-          alt="Outback Bread" width="100%" >
-          <div>
-            <h5 class="entry-title">OUTBACK BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/fb-017_pao-de-milho-verde_03.jpg" 
-          alt="Corn Loaf Bread" width="100%" >
-          <div>
-            <h5 class="entry-title">SWEET CORN BREAD</h5>
-          </div>
-        </div>
-
-         <!-- others -->
-         <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt-069_pao-de-queijo_receita.jpg" 
-          alt="Brazilian Cheese Bread
-          " width="100%" >
-          <div>
-            <h5 class="entry-title">BRAZILIAN CHEESE BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/receita-de-broinha-de-milho.jpg" 
-          alt="Corn Shortbread" width="100%" >
-          <div>
-            <h5 class="entry-title">CORN SHORTBREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt-047_pao-de-aveia-e-mel_receita.jpg" 
-          alt="Honey Oat Loaf" width="100%" >
-          <div>
-            <h5 class="entry-title">HONEY OAT BREAD</h5>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-            <img src="https://raw.githubusercontent.com/rejaraujo/BakeAbroad/main/public/images/yt-059_pao-de-coco_receita.jpg" 
-          alt="Coconut Loaf Bread" width="100%" >
-          <div>
-            <h5 class="entry-title">COCUNUT BREAD</h5>
-          </div>
-        </div>
-
-
-
-
+      </div>
     </div>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</main>
-</body>
+    <div class="container-fluid pt-5">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>
+            Join me on my delicious journey, exploring the world through baking
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="recipes" class="container-fluid pt-5">
+      <div class="row">
+        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+          <img
+            src="/images/yt083_pao-de-parmesao-com-oregano_receita02.jpg"
+            alt="Parmesan Bread"
+            width="100%" />
+          <p>
+            <a class="quick-links" href="/parmesan-oregano-bread"
+              ><h5 class="entry-title text-center ">PARMESAN BREAD</h5></a
+            >
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+          <img
+            src="/images/yt-055_pao-de-alho_receita.jpg"
+            alt="Garlic Bread"
+            width="100%" />
+
+          <p>
+            <a href="/garlic-bread" class="quick-links"
+              ><h5 class="entry-title text-center ">PARMESAN BREAD</h5></a
+            >
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+          <img
+            src="/images/yt094_pao-de-espinafre_receita_02.jpg"
+            alt="Spinach Loaf Bread
+        "
+            width="100%" />
+
+          <p>
+            <a href="spinach-loaf-bread" class="quick-links"
+              ><h5 class="entry-title text-center ">SPINACH BREAD</h5></a
+            >
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+          <img
+            src="/images/yt078_pao-de-cenoura_receita.jpg"
+            alt="Carrot Loaf Bread"
+            width="100%" />
+
+          <p>
+            <a href="carrot-loaf-bread" class="quick-links"
+              ><h5 class="entry-title text-center">CARROT BREAD</h5></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid p-5 text-center">
+      <p>
+        &copy; This site is created for demonstrative purposes only and does
+        not offer any real products or services.
+      </p>
+      All images and recipes for this project were retrieved from
+      <a href="https://amopaocaseiro.com.br/" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
+         https://amopaocaseiro.com.br</a>
+      </p>
+    </footer>
+  </body>
 </html>

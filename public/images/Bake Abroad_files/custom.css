@@ -30,6 +30,10 @@ body {
     padding: 2rem;
 };
 
+#about {
+  padding: 3rem;
+}
+
 .col-md-12 h2{
   padding-top: 2rem;
   padding-bottom: 2rem;
