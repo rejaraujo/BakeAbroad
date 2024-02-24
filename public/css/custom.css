@@ -1,8 +1,10 @@
 
 .navbar {
     border-bottom: 2px solid #F7BF81; 
+    padding-bottom: 0;
   }
 
+ 
   .navbar-nav .nav-item .nav-link {
     transition: color 0.3s ease;
 }
@@ -28,7 +30,9 @@
 
 body {
     padding: 2rem;
+    background-color: #f8fcff
 };
+
 
 .col-md-12 h2{
   padding-top: 2rem;
@@ -36,23 +40,37 @@ body {
   
 }
 
-
-#recipes .col-md-4 a.quick-links {
+#recipes-notebook .col-md-4 a.quick-links {
   text-decoration: none;
   color: grey;
 }
 
-#recipes .col-md-4 a:hover {
+#recipes-notebook .col-md-4 a:hover {
   transition: color 0.3s ease;
 }
 
-#recipes .col-md-4 a:hover {
+#recipes-notebook .col-md-4 a:hover {
   text-decoration: none;
-  color: #FFA500;
-  
+  color: #FFA500;  
 }
 
+.d-grid button {
+  background-color: black;
+  border: none;
+}
 
+.d-grid button {
+  transition: color 0.3s ease;
+}
+
+.d-grid button:hover{
+  background-color: #FFA500; 
+}
+
+.container-fluid pt-4 mt-4 disclaimer {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
 
 

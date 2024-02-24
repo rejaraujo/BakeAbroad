@@ -4,8 +4,9 @@ const { MongoClient, ServerApiVersion } = require("mongodb");
 const recipes = require("../data/recipes.json");
 require("dotenv").config();
 
-const adminRouter = express.Router();
-adminRouter.route("/").get((req, res) => {
+const classesRouter = express.Router();
+
+classesRouter.route("/").get((req, res) => {
   const uri = process.env.MONGO_CONNECTION_STRING;
   const dbName = "BakeAbroad";
 
@@ -16,13 +17,12 @@ adminRouter.route("/").get((req, res) => {
       deprecationErrors: true,
     },
   });
-
   async function mongo() {
     try {
       await client.connect();
       const db = client.db(dbName);
-      const response = await db.collection("recipes").insertMany(recipes);
-      res.json(response);
+      const recipes = await db.collection("recipes").find().toArray();
+      res.render("classes", { recipes, title: "Bake Abroad" });
     } catch (error) {
       debug(error.stack);
     } finally {
@@ -32,4 +32,4 @@ adminRouter.route("/").get((req, res) => {
   mongo();
 });
 
-module.exports = adminRouter;
+module.exports = classesRouter;

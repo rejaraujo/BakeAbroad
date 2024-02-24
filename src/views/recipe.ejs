@@ -11,8 +11,6 @@
       crossorigin="anonymous" />
     <!-- <link rel="stylesheet" href="css/custom.css" /> -->
     <link rel="stylesheet" type="text/css" href="/css/custom.css">
-
-
   </head>
 
   <body>
@@ -39,82 +37,87 @@
             <li class="nav-item">
               <a class="nav-link fs-4 " href="/recipes"> Recipes </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 active" aria-current="page" href="/classes"> Classes</a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <main role="main">
-      <!-- <div class="container pt-5"> -->
-      <div class="container-fluid pt-3 mt-3">
+      <div class="container-fluid pt-4 mt-4">
+        <h2>Disclaimer:</h2>
+        <div class="intro-text pt-4 mt-4">
+            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes.</p>
+            <!-- <p class="fs-5">The content displayed on Bake Abroad, including but not limited to recipes and information, is sourced for educational demonstration and illustration purposes only. We do not offer any real products or services for sale or distribution.</p> -->
+            <p class="fs-5">Please note that all content on this website has been sourced from
+                <a class="link" href="https://amopaocaseiro.com.br/receitas/" target="_blank">Amo Pao Caseiro Recipes</a>
+                and <a href="https://www.youtube.com/@amopaocaseiro" class="link" target="_blank">Amo Pao Caseiro YouTube channel</a>.</p>
+        </div>
+    </div>    
+      <div class="container-fluid pt-4 mt-4">
         <div class="row">
           <div class="col-md-12 col-lg-12 col-sm-12 mt-3">
-        <div class="card">
-          <div class="card-header">
-            <h1><%= recipe.title %></h1>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <p><%= recipe.content %></p>
-            </li>
-            <li class="list-group-item ">
-              <ul>
-                <% recipe.ingredients.forEach(section => { %>
-                  <% if (section.section === 'SPONGE') { %>
-                    <h3>Sponge</h3>
-                    <h4>Ingredients:</h4>
-                    
-                      <% section.items.forEach(item => { %>
-                        <li><%= item.quantity %> of <%= item.name %></li>
-                      <% }); %>
-                      <!-- Move the instructions block inside the sponge section -->
-                      <h4 class="pt-2">Instructions:</h4>
-                      <% recipe.steps.forEach(step => { %>
-                        <% if (step.section === 'SPONGE') { %>
-                          <% step.steps.forEach(s => { %>
-                            <li class="list-group-flush" ><%= s %></li>
-                            <% }); %>
-                            <% } %>
-                            <% }); %>
-                  <% } else { %>
-                    <!-- do not print the next ul that says instructions -->
-                  <% } %>
-                <% }); %>
-              </ul>
-              <li class="list-group-item ">
-                <ul>
-                  <% recipe.ingredients.forEach(section => { %> <% if
-                  (section.section === 'DOUGH') { %> 
-                    <h3>Dough</h3>
-                    <h4>Ingredients:</h4>
-                    <%section.items.forEach(item => { %>
-                  <li><%= item.quantity %> of <%= item.name %></li>
-                  <% }); %> <% } %> <% }); %>
+            <div class="card">
+              <div class="card-header">
+                <h1 ><%= recipe.title %></h1>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <p><%= recipe.content %></p>
+                </li>
                 </ul>
-                <!-- Output steps for FINAL_DOUGH section -->
-            <ul>
-              <h4 class="pt-2">Instructions</h4>
-              <% recipe.steps.forEach(step => { %>
-                <% if (step.section === 'FINAL_DOUGH') { %>
-                  <% step.steps.forEach(s => { %>
-                    <li><%= s %></li>
-                    <% }); %>
-                    <% } %>
+            <div class="card">
+              <% recipe.ingredients.forEach(section => { %>
+                <% if (section.section === 'SPONGE') { %>
+                  <div class="card-header">
+                    <h3>Sponge</h3>
+                  </div>
+                  <h4 class="ingredients-instructions px-3">Ingredients:</h4>
+                  <ul>
+                    <% section.items.forEach(item => { %>
+                      <li><%= item.quantity %> of <%= item.name %></li>
                     <% }); %>
                   </ul>
-              </ul>
-            </li>
-              </ul>
-            </li>
-            </li>
-          </ul>
-        </div>
-      </div>
+                  <h4 class="ingredients-instructions px-3">Instructions:</h4>
+                  <ul>
+                    <% recipe.steps.forEach(step => { %>
+                      <% if (step.section === 'SPONGE') { %>
+                        <% step.steps.forEach(s => { %>
+                          <li><%= s %></li>
+                        <% }); %>
+                      <% } %>
+                    <% }); %>
+                  </ul>
+                <% } else if (section.section === 'DOUGH') { %>
+                  <div class="card-header">
+                    <h3>Dough</h3>
+                  </div>
+                  <h4 class="ingredients-instructions px-3">Ingredients:</h4>
+                  <ul >
+                    <% section.items.forEach(item => { %>
+                      <li><%= item.quantity %> of <%= item.name %></li>
+                    <% }); %>
+                  </ul>
+                <% } %>
+              <% }); %>
+              <h4 class="ingredients-instructions px-3">Instructions:</h4>
+                  <ul>
+                    <% recipe.steps.forEach(step => { %>
+                      <% if (step.section === 'FINAL_DOUGH') { %>
+                        <% step.steps.forEach(s => { %>
+                          <li><%= s %></li>
+                        <% }); %>
+                      <% } %>
+                    <% }); %>
+                  </ul>
+                 </div>
       <footer class="container-fluid p-5 text-center">
         <p>
           &copy; This site is created for demonstrative purposes only and does
           not offer any real products or services.
         </p>
-        All images and recipes for this project were retrieved from
+        The entirety of the content presented within this project has been sourced from:
         <a href="https://amopaocaseiro.com.br/" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">
            https://amopaocaseiro.com.br</a>
         </p>

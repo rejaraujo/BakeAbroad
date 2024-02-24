@@ -49,7 +49,7 @@
       {
         "section": "FINAL_DOUGH",
         "steps": [
-          "Now add the remaining wheat flour, which is 300 grams.",
+          "Now in the stand mixer bowl add the remaining wheat flour, which is 300 grams.If you prepared the sponge in a different bowl, place it here as well.",
           "Add 8 grams of salt and 4 grams of sugar.",
           "If this is the first time you've made this recipe and you don't know the flour brand you're using very well, don't add all the water. Reserve some, mix the ingredients, and check the consistency. If it's too firm, add more water until you reach the desired consistency.",
           "So it will be from 160 to 170 grams of cold water.",
@@ -63,7 +63,8 @@
     ],
     "additional_info": {
       "equipment": ["Precision scale", "Stand Mixer"],
-      "image": "/images/French Rolls.jpg"
+      "image": "/images/French Rolls.jpg",
+      "video_link": "https://www.youtube.com/embed/mEjddzTpuNI?si=N-B4I1VV9931zulI"
     }
   },
   {
@@ -152,7 +153,8 @@
         "Precision scale",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/ciabatta-receita-IMG_4462.jpg"
+      "image": "/images/ciabatta-receita-IMG_4462.jpg",
+      "video_link": "https://www.youtube.com/embed/q3hbLIs_tN0?si=JJVTm5EfFSHSIHBv"
     }
   },
   {
@@ -202,9 +204,7 @@
       {
         "section": "FINAL_DOUGH",
         "steps": [
-          "In a larger bowl, add 320 g of wheat flour",
-          "8 g of salt",
-          "And 20 g of sugar",
+          "In a larger bowl, add 320 g of wheat flour, 8 g of sal, and 20 g of sugar",
           "Mix the three dry ingredients, making a well in the middle of the flour.",
           "Place the sponge we made previously",
           "Weigh 150 g of whole milk into a glass, but only add half",
@@ -280,7 +280,8 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt083_pao-de-parmesao-com-oregano_receita02.jpg"
+      "image": "/images/yt083_pao-de-parmesao-com-oregano_receita02.jpg",
+      "video_link": "https://www.youtube.com/embed/n_802ucG6lA?si=L56xkud4zTtwxDI_"
     }
   },
   {
@@ -424,7 +425,8 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt-055_pao-de-alho_receita.jpg"
+      "image": "/images/yt-055_pao-de-alho_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/ki2rEAUoVuQ?si=Z3NuXqgBfD7sceD4"
     }
   },
   {
@@ -568,7 +570,8 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt-054_enroladinho-de-salsicha_receita.jpg"
+      "image": "/images/yt-054_enroladinho-de-salsicha_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/tkHv48mLsIM?si=DKDq5elQlRMlqvpI"
     }
   },
   {
@@ -697,7 +700,8 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/receita-joelho-ou-enroladinho.jpg"
+      "image": "/images/receita-joelho-ou-enroladinho.jpg",
+      "video_link": "https://www.youtube.com/embed/Zv7cPVfNlqw?si=M41DYtBhPqEjfFx4"
     }
   },
   {
@@ -785,7 +789,8 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/receita_pao-australiano_IMG_4239-300x200.jpg"
+      "image": "/images/receita_pao-australiano_IMG_4239-300x200.jpg",
+      "video_link": "https://www.youtube.com/embed/3I486km5o9M?si=2rYneKrL_FJsPaoN"
     }
   },
   {
@@ -907,10 +912,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt094_pao-de-espinafre_receita_02.jpg"
+      "image": "/images/yt094_pao-de-espinafre_receita_02.jpg",
+      "video_link": "https://www.youtube.com/embed/-FWyIJ-u7Xs?si=2kP8JiK61lKExuA-"
     }
   },
-
   {
     "id": 93462,
     "title": "Carrot Loaf Bread",
@@ -963,10 +968,7 @@
       {
         "section": "FINAL_DOUGH",
         "steps": [
-          "Meanwhile, let's prepare the carrot paste",
-          "Steam a medium carrot for about 5 minutes, until it softens a little.",
-          "Then just put it in a food processor or knead it with a fork.",
-          "30 MINUTES",
+          "Meanwhile, let's prepare the carrot paste. Steam a medium carrot for about 5 minutes, until it softens a little. Then just put it in a food processor or knead it with a fork. Let it rest for about 30 MINUTES",
           "In a larger bowl, add another 280 g of wheat flour",
           "7 g of salt",
           "Add 35 g of sugar and mix the dry ingredients",
@@ -1049,10 +1051,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt078_pao-de-cenoura_receita.jpg"
+      "image": "/images/yt078_pao-de-cenoura_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/u_3TcsaaisI?si=BOioMcKr1bW-bAVk"
     }
   },
-
   {
     "id": 48291,
     "title": "Coconut Bread",
@@ -1170,10 +1172,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt-059_pao-de-coco_receita.jpg"
+      "image": "/images/yt-059_pao-de-coco_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/CXa1qmmCs38?si=rec45DVN2y-lIgc9"
     }
   },
-
   {
     "id": 72934,
     "title": "Cornbread",
@@ -1291,10 +1293,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/fb-017_pao-de-milho-verde_03.jpg"
+      "image": "/images/fb-017_pao-de-milho-verde_03.jpg",
+      "video_link": "https://www.youtube.com/embed/sx-lSHM0fJY?si=kIDwaGCG_pGZ8z10"
     }
   },
-
   {
     "id": 86423,
     "title": "Oat and Honey Bread",
@@ -1427,10 +1429,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt-047_pao-de-aveia-e-mel_receita.jpg"
+      "image": "/images/yt-047_pao-de-aveia-e-mel_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/-7K9CSvXZLY?si=zL9JnGl-sw46XCQS"
     }
   },
-
   {
     "id": 29714,
     "title": "Potato Focaccia",
@@ -1525,10 +1527,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt084_focaccia-de-batata_receita.jpg"
+      "image": "/images/yt084_focaccia-de-batata_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/gAAgSNaIJnE?si=0lk4g3VHRCxeCjA5"
     }
   },
-
   {
     "id": 53849,
     "title": " Focaccia",
@@ -1658,10 +1660,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/focaccia_1200x800-300x200.jpg"
+      "image": "/images/focaccia_1200x800-300x200.jpg",
+      "video_link": "https://www.youtube.com/embed/TRBiwOwb170?si=zbGXmE4_pq_EnZJ7"
     }
   },
-
   {
     "id": 68374,
     "title": " Brazilian Cheese Bread",
@@ -1730,10 +1732,10 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/yt-069_pao-de-queijo_receita.jpg"
+      "image": "/images/yt-069_pao-de-queijo_receita.jpg",
+      "video_link": "https://www.youtube.com/embed/ZU_wbPigVRI?si=8CNgZBcGd8QNI7oo"
     }
   },
-
   {
     "id": 49621,
     "title": " Cornmeal Shortbread",
@@ -1811,7 +1813,8 @@
         "Stand Mixer",
         "Other basic utensils for making homemade bread"
       ],
-      "image": "/images/receita-de-broinha-de-milho.jpg"
+      "image": "/images/receita-de-broinha-de-milho.jpg",
+      "video_link": "https://www.youtube.com/embed/qKuNJ4guESA?si=gPYpsmPX-P_hTJTf"
     }
   }
 ]
