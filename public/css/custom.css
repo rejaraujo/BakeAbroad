@@ -4,13 +4,18 @@
     padding-bottom: 0;
   }
 
+  .navbar-nav .nav-item .nav-link  {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
  
   .navbar-nav .nav-item .nav-link {
     transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
-    color: #FFA500; 
+    color: #FFA500;
 }
   
   .navbar-brand h2 {
@@ -32,7 +37,6 @@ body {
     padding: 2rem;
     background-color: #f8fcff
 };
-
 
 .col-md-12 h2{
   padding-top: 2rem;
@@ -71,7 +75,5 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
-
 
 

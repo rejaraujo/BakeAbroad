@@ -28,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto text-center">
+          <ul class="navbar-nav ms-auto ">
             <li class="nav-item ">
               <a class="nav-link fs-4  active" aria-current="page" href="/">Home</a>
             </li>
@@ -36,7 +36,7 @@
               <a class="nav-link fs-4 " href="/recipes"> Recipes </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4 active" aria-current="page" href="/classes"> Classes</a>
+              <a class="nav-link fs-4" aria-current="page" href="/classes"> Classes</a>
             </li>
           </ul>
         </div>
@@ -53,17 +53,16 @@
                 and <a href="https://www.youtube.com/@amopaocaseiro" class="link" target="_blank">Amo Pao Caseiro YouTube channel</a>.</p>
         </div>
     </div>
-    <div class="container-fluid pt-4 mt-4">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12">
-          <h2>
+        <!-- <div class="col-md-12 text-center">
+          <h1>
             Join me on my delicious journey, exploring the world through baking
-          </h2>
+          </h1> -->
         </div>
       </div>
     </div>
-
-    <div id="recipes-notebook" class="container-fluid pt-3 mt-3">
+  <div id="recipes-notebook" class="container-fluid pt-3 mt-3">
       <div class="row">
         <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
           <img
@@ -115,6 +114,31 @@
         </div>
       </div>
     </div>
+    <div id="recipes-notebook" class="container-fluid pt-3 mt-3">
+      <div class="row">
+          <div>
+            <div class="card">
+              <div class="card-body">
+                  <h2 class="card-title text-center">Sign In</h2>
+                  <form name="signUp" action="/auth/signUp" method="POST" class="mt-4">
+                      <div class="mb-4">
+                          <label for="username" class="form-label">Username</label>
+                          <input type="text" class="form-control" id="username" name="username" required>
+                      </div>
+                      <div class="mb-4">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" name="password" required>
+                      </div>
+                      <div class="d-grid pt-3">
+                          <button type="submit" value="jane" class="btn btn-primary">Sign Up</button>
+                      </div>
+                      <p class="fs-4 text-center pt-4" style="color: chocolate;">Happy Baking!</p>
+                  </form>
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>
 
     <footer class="container-fluid p-5 text-center">
       <p>
