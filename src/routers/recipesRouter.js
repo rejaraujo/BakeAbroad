@@ -3,7 +3,6 @@ const debug = require("debug")("app:adminRouter");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const recipes = require("../data/recipes.json");
 require("dotenv").config();
-
 const recipesRouter = express.Router();
 
 recipesRouter.route("/").get((req, res) => {
