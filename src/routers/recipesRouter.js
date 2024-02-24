@@ -35,8 +35,7 @@ recipesRouter.route("/").get((req, res) => {
 //single recipe
 recipesRouter.route("/:id").get((req, res) => {
   const id = req.params.id;
-  const uri =
-    "mongodb+srv://userdb:wbJJwvoV8rRJV6Ei@bakeabroad.13v619l.mongodb.net/?retryWrites=true&w=majority&appName=BakeAbroad";
+  const uri = process.env.MONGO_CONNECTION_STRING;
   const dbName = "BakeAbroad";
 
   const client = new MongoClient(uri, {
