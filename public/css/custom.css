@@ -21,7 +21,7 @@
   .navbar-brand h2 {
       font-family: "Indie Flower", cursive;
       font-weight: 400;
-      font-style: normal;
+      /* font-style: normal; */
   }
 
   .navbar-brand h2:hover {
@@ -46,7 +46,55 @@ body {
 
 #recipes-notebook .col-md-4 a.quick-links {
   text-decoration: none;
-  color: grey;
+  color: #777777;
+}
+
+#sign-up .card {
+  border: transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#sign-up .card-header {
+  color: #777777;
+  background-color: #FFD4A6;
+  border: transparent;
+}
+
+#sign-up input {
+  border: 1px solid #e2e2e2;
+}
+
+#sign-up input {
+  transition: color 0.3s ease;
+}
+
+#sign-up input:hover {
+  color: #FFA500;
+  border: 1px solid #FFA500;
+}
+
+#sign-up .btn.btn-primary {
+  color: #F7BF81;
+  font-weight: bold;
+  background: transparent;
+  border: 1px solid #e2e2e2;
+}
+
+#sign-up .btn.btn-primary {
+  transition: color 0.3s ease;
+}
+
+#sign-up .btn.btn-primary:hover {
+  color: #FFA500;
+  border: 1px solid #FFA500;
+}
+
+
+#sign-up .card-footer {
+  color: #777777;
+  background-color: #FFD4A6;
+  border: transparent;
 }
 
 #recipes-notebook .col-md-4 a:hover {
@@ -75,5 +123,3 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
-
