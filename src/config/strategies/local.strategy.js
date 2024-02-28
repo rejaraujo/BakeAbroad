@@ -23,8 +23,7 @@ module.exports = function localStrategy() {
             deprecationErrors: true,
           },
         });
-        // const user = { username, password, name: "Jaine" };
-        // done(null, user);
+        //add user
         async function addUser() {
           try {
             await client.connect();

@@ -2,6 +2,7 @@ const express = require("express");
 const debug = require("debug")("app:adminRouter");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const passport = require("passport");
+const bcrypt = require("bcrypt");
 require("dotenv").config();
 
 const authRouter = express.Router();
@@ -24,8 +25,19 @@ authRouter.route("/signUp").post((req, res) => {
     try {
       await client.connect();
       const db = client.db(dbName);
-      const user = { username, password };
-      const results = await db.collection("user").insertOne(user);
+      //checking if username exists in the mongodb colletcion("user")
+      const existingUser = await db.collection("user").findOne({ username });
+      if (existingUser) {
+        return res
+          .status(400)
+          .send("Error: Username already taken. Please choose another one");
+      }
+      //Hash the password
+      const hashedPassword = await bcrypt.hash(password, 10);
+      const newUser = { username, password: hashedPassword };
+      const results = await db.collection("user").insertOne(newUser);
+      //
+
       debug(results);
       //TODO create user
       req.login(results, () => {
