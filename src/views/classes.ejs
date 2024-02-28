@@ -39,21 +39,26 @@
             <li class="nav-item">
               <a class="nav-link fs-4 active" aria-current="page" href="/classes"> Classes</a>
             </li>
+            <li class="nav-item">
+              <% if (!isLoggedIn) { %>
+                <a id="sign-up-button" class="nav-link fs-4" aria-current="page" href="/auth/signIn"> Sign Up</a>
+              <% } else { %> 
+                <a id="logout-button" class="nav-link fs-4" aria-current="page" href="/logout"> Sign Out</a>
+              <% } %>
+            </li>
           </ul>
         </div>
       </div>
     </header>
     <main role="main">
       <div class="container-fluid pt-4 mt-4">
-        <h2>Disclaimer:</h2>
+        <h3>Disclaimer:</h3>
         <div class="intro-text pt-4 mt-4">
-            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes.</p>
-            <!-- <p class="fs-5">The content displayed on Bake Abroad, including but not limited to recipes and information, is sourced for educational demonstration and illustration purposes only. We do not offer any real products or services for sale or distribution.</p> -->
-            <p class="fs-5">Please note that all content on this website has been sourced from
+            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes. Please note that all content on this website has been sourced from
                 <a class="link" href="https://amopaocaseiro.com.br/receitas/" target="_blank">Amo Pao Caseiro Recipes</a>
                 and <a href="https://www.youtube.com/@amopaocaseiro" class="link" target="_blank">Amo Pao Caseiro YouTube channel</a>.</p>
         </div>
-    </div>    
+    </div>
       <div id="recipes-notebook" class="container-fluid pt-3 mt-3">
         <div class="row">
           <% recipes.map((recipe, index) => { %>
@@ -63,7 +68,7 @@
             </div>
           </div>
           <% }); %>
-        </div>        
+        </div>   
       <footer class="container-fluid p-5 text-center">
         <p>
           &copy; This site is created for demonstrative purposes only and does

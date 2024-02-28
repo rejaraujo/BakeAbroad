@@ -22,7 +22,11 @@ recipesRouter.route("/").get((req, res) => {
       const db = client.db(dbName);
       const recipes = await db.collection("recipes").find().toArray();
       // res.render("recipes", {recipes});
-      res.render("recipes", { recipes, title: "BakeAbroad" });
+      res.render("recipes", {
+        recipes,
+        title: "BakeAbroad",
+        isLoggedIn: req.isAuthenticated(),
+      });
     } catch (error) {
       debug(error.stack);
     } finally {
@@ -52,7 +56,11 @@ recipesRouter.route("/:id").get((req, res) => {
       const recipe = await db
         .collection("recipes")
         .findOne({ _id: new ObjectId(id) });
-      res.render("recipe", { recipe, title: "BakeAbroad" });
+      res.render("recipe", {
+        recipe,
+        title: "BakeAbroad",
+        isLoggedIn: req.isAuthenticated(),
+      });
     } catch (error) {
       debug(error.stack);
     } finally {

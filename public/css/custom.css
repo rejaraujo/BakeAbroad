@@ -1,6 +1,5 @@
-
 .navbar {
-    border-bottom: 2px solid #F7BF81; 
+    border-bottom: 4px solid #F7BF81; 
     padding-bottom: 0;
   }
 
@@ -19,9 +18,10 @@
 }
   
   .navbar-brand h2 {
-      font-family: "Indie Flower", cursive;
-      font-weight: 400;
-      /* font-style: normal; */
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    color: #F7BF81;
+    /* font-style: normal; */
   }
 
   .navbar-brand h2:hover {
@@ -47,6 +47,16 @@ body {
 #recipes-notebook .col-md-4 a.quick-links {
   text-decoration: none;
   color: #777777;
+}
+
+#join-us {
+  color: whitesmoke;
+  font-weight: bolder;
+  background-color: #FFA500;
+  letter-spacing: 4px;
+  border: transparent;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 #sign-up .card {

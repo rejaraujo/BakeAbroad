@@ -39,7 +39,11 @@
               <a class="nav-link fs-4" aria-current="page" href="/classes"> Classes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-4" aria-current="page" href="#sign-up"> Sign Up</a>
+              <% if (!isLoggedIn) { %>
+                <a id="sign-up-button" class="nav-link fs-4" aria-current="page" href="#sign-up"> Sign Up</a>
+              <% } else { %> 
+                <a id="logout-button" class="nav-link fs-4" aria-current="page" href="/logout"> Sign Out</a>
+              <% } %>
             </li>
           </ul>
         </div>
@@ -47,103 +51,102 @@
     </header>
     <main>
       <div class="container-fluid pt-4 mt-4">
-        <h2>Disclaimer:</h2>
+        <h3>Disclaimer:</h3>
         <div class="intro-text pt-4 mt-4">
-            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes.</p>
-            <!-- <p class="fs-5">The content displayed on Bake Abroad, including but not limited to recipes and information, is sourced for educational demonstration and illustration purposes only. We do not offer any real products or services for sale or distribution.</p> -->
-            <p class="fs-5">Please note that all content on this website has been sourced from
+            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes. Please note that all content on this website has been sourced from
                 <a class="link" href="https://amopaocaseiro.com.br/receitas/" target="_blank">Amo Pao Caseiro Recipes</a>
                 and <a href="https://www.youtube.com/@amopaocaseiro" class="link" target="_blank">Amo Pao Caseiro YouTube channel</a>.</p>
         </div>
     </div>
     <div class="container-fluid">
-      <div class="row">
-        <!-- <div class="col-md-12 text-center">
-          <h1>
-            Join me on my delicious journey, exploring the world through baking
-          </h1> -->
+      <div id="recipes-notebook" class="container-fluid pt-4 mt-4">
+        <div class="row">
+          <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+            <img
+              src="/images/yt083_pao-de-parmesao-com-oregano_receita02.jpg"
+              alt="Parmesan Bread"
+              width="100%" />
+            <p>
+              <a class="quick-links" href="/recipes">
+                <h5 class="entry-title text-center ">PARMESAN BREAD</h5></a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+            <img
+              src="/images/yt-055_pao-de-alho_receita.jpg"
+              alt="Garlic Bread"
+              width="100%" />
+            <p>
+              <a href="/recipes" class="quick-links"
+                ><h5 class="entry-title text-center ">GARLIC BREAD</h5></a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+            <img
+              src="/images/yt094_pao-de-espinafre_receita_02.jpg"
+              alt="Spinach Loaf Bread"
+              width="100%" />
+            <p>
+              <a href="/recipes" class="quick-links"
+                ><h5 class="entry-title text-center ">SPINACH BREAD</h5></a
+              >
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
+            <img
+              src="/images/yt078_pao-de-cenoura_receita.jpg"
+              alt="Carrot Loaf Bread"
+              width="100%" />
+            <p>
+              <a href="/recipes" class="quick-links"
+                ><h5 class="entry-title text-center">CARROT BREAD</h5></a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  <div id="recipes-notebook" class="container-fluid pt-4 mt-4">
-      <div class="row">
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-          <img
-            src="/images/yt083_pao-de-parmesao-com-oregano_receita02.jpg"
-            alt="Parmesan Bread"
-            width="100%" />
-          <p>
-            <a class="quick-links" href="/recipes">
-              <h5 class="entry-title text-center ">PARMESAN BREAD</h5></a
-            >
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-          <img
-            src="/images/yt-055_pao-de-alho_receita.jpg"
-            alt="Garlic Bread"
-            width="100%" />
-
-          <p>
-            <a href="/recipes" class="quick-links"
-              ><h5 class="entry-title text-center ">GARLIC BREAD</h5></a
-            >
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-          <img
-            src="/images/yt094_pao-de-espinafre_receita_02.jpg"
-            alt="Spinach Loaf Bread
-        "
-            width="100%" />
-
-          <p>
-            <a href="/recipes" class="quick-links"
-              ><h5 class="entry-title text-center ">SPINACH BREAD</h5></a
-            >
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-sm-6 mt-3">
-          <img
-            src="/images/yt078_pao-de-cenoura_receita.jpg"
-            alt="Carrot Loaf Bread"
-            width="100%" />
-          <p>
-            <a href="/recipes" class="quick-links"
-              ><h5 class="entry-title text-center">CARROT BREAD</h5></a
-            >
-          </p>
+      <div id="join-us" class="container-fluid pt-4 mt-4">
+        <div class="row">
+            <p class=" fs-3 text-center">Bake Beyond Border, Join Us Today!</p>
         </div>
       </div>
-    </div>
     <div id="sign-up" class="container-fluid pt-4 mt-4">
       <div class="row">
         <div class="col-md-6 offset-md-3">
-            <div class="card">
-              <div class="card-header">
-                <h4 class="card-title text-center"><strong>Join <%=title%>!</strong></h4>
+          <% if (!isLoggedIn) { %>
+              <div class="card">
+                  <div class="card-header">
+                      <h4 class="card-title text-center" style="letter-spacing: 1.5px;"><strong>New to BakeAbroad?</strong></h4>
+                  </div>
+                  <div class="card-body">
+                      <h6 class="fs-5 text-center">Create Account</h6>
+                      <form name="signUp" action="/auth/signUp" method="POST" class="mt-4">
+                          <div class="mb-4">
+                              <label for="username" class="form-label">Username</label>
+                              <input type="text" class="form-control" id="username" name="username" required>
+                          </div>
+                          <div class="mb-4">
+                              <label for="password" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="password" name="password" required>
+                          </div>
+                          <div class="d-grid pt-3">
+                              <button type="submit" value="jane" class="btn btn-primary fs-4">Sign Up</button>
+                          </div>
+                      </form>
+                  </div>
+                  <div class="card-footer mt-4">
+                      <h5 class="fs-4 text-center" style="letter-spacing: 1.5px;">Join us and become an Abroad Baker today!</h5>
+                  </div>
               </div>
-              <div class="card-body">
-                  <form name="signUp" action="/auth/signUp" method="POST" class="mt-4">
-                      <div class="mb-4">
-                          <label for="username" class="form-label">Username</label>
-                          <input type="text" class="form-control" id="username" name="username" required>
-                      </div>
-                      <div class="mb-4">
-                          <label for="password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="password" name="password" required>
-                      </div>
-                      <div class="d-grid pt-3">
-                          <button type="submit" value="jane" class="btn btn-primary fs-4">Sign Up</button>
-                      </div>
-                  </form>
-                </div>
-                <div class="card-footer mt-4">
-                  <h5 class="fs-4 text-center">Bake Beyond Borders!</h5>
-              </div>
-          </div>
-          </div>
+          <% } %>
+      </div>      
+<!--  -->
       </div>
+    </div>
+  
     <footer class="container-fluid p-5 text-center">
       <p>
         &copy; This site is created for demonstrative purposes only and does

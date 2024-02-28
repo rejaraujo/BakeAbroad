@@ -31,7 +31,11 @@ classesRouter.route("/").get((req, res) => {
       await client.connect();
       const db = client.db(dbName);
       const recipes = await db.collection("recipes").find().toArray();
-      res.render("classes", { recipes, title: "BakeAbroad" });
+      res.render("classes", {
+        recipes,
+        title: "BakeAbroad",
+        isLoggedIn: req.isAuthenticated(),
+      });
     } catch (error) {
       debug(error.stack);
     } finally {

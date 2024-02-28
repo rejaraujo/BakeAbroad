@@ -38,31 +38,38 @@
             <li class="nav-item">
               <a class="nav-link fs-4" aria-current="page" href="/classes"> Classes</a>
             </li>
+            <li class="nav-item">
+              <% if (!isLoggedIn) { %>
+                <a id="sign-up-button" class="nav-link fs-4" aria-current="page" href="/"> Sign Up</a>
+              <% } else { %> 
+                <a id="logout-button" class="nav-link fs-4" aria-current="page" href="/logout"> Sign Out</a>
+              <% } %>
+            </li>
+            <!--  -->
+            
           </ul>
         </div>
       </div>
     </header>
     <main>
       <div class="container-fluid pt-4 mt-4">
-        <h2>Disclaimer:</h2>
+        <h3>Disclaimer:</h3>
         <div class="intro-text pt-4 mt-4">
-            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes.</p>
-            <!-- <p class="fs-5">The content displayed on Bake Abroad, including but not limited to recipes and information, is sourced for educational demonstration and illustration purposes only. We do not offer any real products or services for sale or distribution.</p> -->
-            <p class="fs-5">Please note that all content on this website has been sourced from
+            <p class="fs-5">Bake Abroad operates solely as a demonstration platform and does not engage in the provision of actual products or services. All materials and content showcased on this platform are intended strictly for educational and illustrative purposes. Please note that all content on this website has been sourced from
                 <a class="link" href="https://amopaocaseiro.com.br/receitas/" target="_blank">Amo Pao Caseiro Recipes</a>
                 and <a href="https://www.youtube.com/@amopaocaseiro" class="link" target="_blank">Amo Pao Caseiro YouTube channel</a>.</p>
         </div>
+    </div>
     </div>
     <div id="sign-up" class="container-fluid pt-4 mt-4">
       <div class="row">
         <div class="col-md-6 offset-md-3">
             <div class="card">
               <div class="card-header">
-                <h4 class="card-title text-center">Welcome BakeAbroad Bakers!</strong></h4>
-                <!-- <p class="card-subtitle fs-5 text-center">Join Us for Exclusive Recipes</p> -->
+                <h4 class="card-title text-center"><strong>Welcome back Abroad Bakers!</strong></h4>
               </div>
               <div class="card-body">
-                  <form name="signUp" action="/auth/signIn" method="POST" class="mt-4">
+                  <form name="signIn" action="/auth/signIn" method="POST" class="mt-4">
                       <div class="mb-4">
                           <label for="username" class="form-label">Username</label>
                           <input type="text" class="form-control" id="username" name="username" required>
@@ -77,14 +84,11 @@
                   </form>
                 </div>
                 <div class="card-footer mt-4">
-                  <!-- <p class="fs-4 text-center">Happy Baking!</p> -->
-                  <h5 class="fs-4 text-center">Happy Baking Abroad Bakers!</h5>
+                  <h5 class="fs-4 text-center"><strong>Happy Baking!</strong></h5>
               </div>
           </div>
           </div>
       </div>
-      
-
     <footer class="container-fluid p-5 text-center">
       <p>
         &copy; This site is created for demonstrative purposes only and does

@@ -32,7 +32,16 @@ app.use("/admin", adminRouter);
 app.use("/auth", authRoter);
 
 app.get("/", (req, res) => {
-  res.render("index", { title: "BakeAbroad" });
+  res.render("index", {
+    title: "BakeAbroad",
+    isLoggedIn: req.isAuthenticated(),
+  });
+});
+
+app.get("/logout", (req, res) => {
+  req.logout(() => {
+    res.redirect("/");
+  }); // it will clear he user's data
 });
 
 app.listen(PORT, () => {

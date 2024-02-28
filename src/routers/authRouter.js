@@ -29,7 +29,7 @@ authRouter.route("/signUp").post((req, res) => {
       debug(results);
       //TODO create user
       req.login(results, () => {
-        res.redirect("/auth/profile");
+        res.redirect("/");
       });
     } catch (error) {
       debug(error.stack);
@@ -43,13 +43,16 @@ authRouter.route("/signUp").post((req, res) => {
 authRouter
   .route("/signIn")
   .get((req, res) => {
-    res.render("signin", { title: "BakeAbroad" });
+    res.render("signin", {
+      title: "BakeAbroad",
+      isLoggedIn: req.isAuthenticated(),
+    });
   })
-  //authenticate so instead of req and res we use passport.authenticate;
+  //authenticate so instead of req and res I can use passport.authenticate;
   .post(
     passport.authenticate("local", {
-      successRedirect: "/auth/profile",
-      failureRedirect: "/",
+      successRedirect: "/classes",
+      failureRedirect: "/#sign-up",
     })
   );
 
