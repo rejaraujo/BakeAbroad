@@ -70,15 +70,18 @@ When deploying your Node.js and Express.js application to a production environme
 
 ![Recipes.ejs](public/images/SCR-20240228-lpet.jpeg)
 
-![Classes.ejs not signned in](public/images/SCR-20240228-mdzt.png)
+![Classes.ejs sign in](public/images/SCR-20240228-mdzt.png)
 
 ![Classes.ejs signned in](public/images/SCR-20240228-lqlm.jpeg)
 
 ### Mobile
 
-![Index.ejs](public/images/SCR-20240228-muwh.png) ![Index.ejs nav opened](public/images/SCR-20240228-msob.png)
-![Index.ejs sign up "/#"](public/images/SCR-20240228-mwyj.png) ![Recipes.ejs](public/images/SCR-20240228-msui.png)
-![Classes.ejs not signned in](public/images/SCR-20240228-mtcn.png) ![Classes.ejs signned in](public/images/SCR-20240228-mtna.png)
+[![Index.ejs](public/images/SCR-20240228-muwh.png)](link_to_image)
+[![Index.ejs nav opened](public/images/SCR-20240228-msob.png)](link_to_image)
+[![Index.ejs sign up "/#"](public/images/SCR-20240228-mwyj.png)](link_to_image)
+[![Recipes.ejs](public/images/SCR-20240228-msui.png)](link_to_image)
+[![Classes.ejs not sign in](public/images/SCR-20240228-mtcn.png)](link_to_image)
+[![Classes.ejs sign in](public/images/SCR-20240228-mtna.png)](link_to_image)
 
 ## Contributing
 
