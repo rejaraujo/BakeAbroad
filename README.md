@@ -12,8 +12,8 @@
 
 ## Getting Started
 
-1. **Clone the repository**: `git clone <repository-url>`
-2. **Navigate to the project directory**: `cd <BakeAbroad>`
+1. **Clone the repository**: `git clone`
+2. **Navigate to the project directory**: `cd BakeAbroad`
 3. **Install dependencies**:
 
    ```
