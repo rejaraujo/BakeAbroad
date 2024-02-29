@@ -26,7 +26,10 @@ authRouter.route("/signUp").post((req, res) => {
       await client.connect();
       const db = client.db(dbName);
       //checking if username exists in the mongodb colletcion("user")
-      const existingUser = await db.collection("user").findOne({ username });
+      // const existingUser = await db.collection("user").findOne({ username });
+      const existingUser = await db
+        .collection("user")
+        .findOne({ username: { $eq: username } });
       if (existingUser) {
         return res
           .status(400)

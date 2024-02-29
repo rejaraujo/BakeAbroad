@@ -32,6 +32,7 @@ module.exports = function localStrategy() {
             debug("connected to mongoDB");
             const user = await db.collection("user").findOne({ username });
 
+            //Add bcrypt.compareSync() for password validation
             if (user && bcrypt.compareSync(password, user.password)) {
               done(null, user);
             } else {

@@ -6,9 +6,19 @@ const path = require("path");
 const passport = require("passport");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
+const RateLimit = require("express-rate-limit");
+require("dotenv").config();
 
 const PORT = process.env.PORT || 3000;
+
 const app = express();
+
+//set up rate limiter: maximum of five requests per minute
+const limiter = RateLimit({
+  windowMs: 15 * 60 * 1000, // 15min
+  max: 100, // up to 100 requests per windowMs
+});
+
 const recipesRouter = require("./src/routers/recipesRouter");
 const classesRouter = require("./src/routers/classesRouter.js");
 const adminRouter = require("./src/routers/adminRouter.js");
@@ -19,7 +29,9 @@ app.use(express.static(path.join(__dirname, "/public/")));
 app.use(express.json()); // used to be bodyparser.json
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({ secret: "BakeAbroad" }));
+// app.use(session({ secret: "BakeAbroad" }));
+app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(limiter);
 
 require("./src/config/passport.js")(app);
 
