@@ -2,6 +2,7 @@ const passaport = require("passport");
 const { Strategy, localStrategy } = require("passport-local");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const debug = require("debug")("app:localStrategy");
+const bcrypt = require("bcrypt");
 require("dotenv").config();
 
 module.exports = function localStrategy() {
@@ -29,8 +30,9 @@ module.exports = function localStrategy() {
             await client.connect();
             const db = client.db(dbName);
             debug("connected to mongoDB");
-            const user = await db.collection("user").findOne({ username }); // "user is the collection I inserted in authRouter.js"
-            if (user && user.password === password) {
+            const user = await db.collection("user").findOne({ username });
+
+            if (user && bcrypt.compareSync(password, user.password)) {
               done(null, user);
             } else {
               done(null, false);
