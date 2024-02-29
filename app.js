@@ -29,13 +29,17 @@ app.use(express.static(path.join(__dirname, "/public/")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(
-  session({
-    secret: process.env.SESSION_SECRET,
-    secure: true, // to enable secure cookies
-    httpOnly: true, // to prevent client-side JavaScript from accessing the cookie
-  })
-);
+const sess = {
+  secret: process.env.SESSION_SECRET,
+  cookie: {},
+};
+
+if (app.get("env") === "production") {
+  app.set("trust proxy", 1); // trust first proxy
+  sess.cookie.secure = true; // serve secure cookies
+}
+
+app.use(session(sess));
 
 app.use(limiter);
 
