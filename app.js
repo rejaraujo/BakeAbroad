@@ -26,10 +26,9 @@ const authRoter = require("./src/routers/authRouter.js");
 
 app.use(morgan("tiny"));
 app.use(express.static(path.join(__dirname, "/public/")));
-app.use(express.json()); // used to be bodyparser.json
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// app.use(session({ secret: "BakeAbroad" }));
 app.use(session({ secret: process.env.SESSION_SECRET }));
 app.use(limiter);
 
