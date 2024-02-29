@@ -29,7 +29,14 @@ app.use(express.static(path.join(__dirname, "/public/")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({ secret: process.env.SESSION_SECRET }));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    secure: true, // to enable secure cookies
+    httpOnly: true, // to prevent client-side JavaScript from accessing the cookie
+  })
+);
+
 app.use(limiter);
 
 require("./src/config/passport.js")(app);
