@@ -1,6 +1,6 @@
 # Web Application with Node Express
 
-**BakeAbroad** is a Node.js and Express.js dynamic web application that demo my skills in building reliable, feature-rich web solutions with seamless user authentication and MongoDB database integration. Please note that all the images, videos, and recipes you see in this project were retrieved from [amopaocaseiro.com.br/receitas](https://amopaocaseiro.com.br/receitas/) and [youtube.com/@amopaocaseiro](https://www.youtube.com/@amopaocaseiro).
+**BakeAbroad** is a Node.js and Express.js dynamic web application that I've created to publish a free template to whoever wants to use reliable, feature-rich web solutions with seamless user authentication and MongoDB database integration for free. Clone it and do whatever you want with it. Please note that all the images, videos, and recipes you see in this project were retrieved from amopaocaseiro.com.br/receitas and youtube.com/@amopaocaseiro.
 
 ## Features
 
@@ -9,6 +9,27 @@
 - MongoDB integration with MongoDB Node.js driver
 - Frontend styling with Bootstrap
 - Dynamic HTML rendering with EJS template engine
+
+## Screenshots
+
+### Desktop
+
+![Index.ejs](public/images/SCR-20240228-lnik.jpeg)
+
+![Recipes.ejs](public/images/SCR-20240228-lpet.jpeg)
+
+![Classes.ejs sign in](public/images/SCR-20240228-mdzt.png)
+
+![Classes.ejs signned in](public/images/SCR-20240228-lqlm.jpeg)
+
+### Mobile
+
+[![Index.ejs](public/images/SCR-20240228-muwh.png)](link_to_image)
+[![Index.ejs nav opened](public/images/SCR-20240228-msob.png)](link_to_image)
+[![Index.ejs sign up "/#"](public/images/SCR-20240228-mwyj.png)](link_to_image)
+[![Recipes.ejs](public/images/SCR-20240228-msui.png)](link_to_image)
+[![Classes.ejs not sign in](public/images/SCR-20240228-mtcn.png)](link_to_image)
+[![Classes.ejs sign in](public/images/SCR-20240228-mtna.png)](link_to_image)
 
 ## Getting Started
 
@@ -22,6 +43,7 @@
 
 4. **Set up environment variables**: Create a `.env` file in the root directory based on the provided `.env.example` file.
 5. **Start the server**:
+
    ```
    npm start or nodemon server.js
    ```
@@ -61,27 +83,6 @@ When deploying your Node.js and Express.js application to a production environme
    Make sure to set any necessary environment variables for your production environment.
 
 **For more information on deploying Node.js and Express.js applications** refer to the documentation of your hosting provider or deployment platform.
-
-## Screenshots
-
-### Desktop
-
-![Index.ejs](public/images/SCR-20240228-lnik.jpeg)
-
-![Recipes.ejs](public/images/SCR-20240228-lpet.jpeg)
-
-![Classes.ejs sign in](public/images/SCR-20240228-mdzt.png)
-
-![Classes.ejs signned in](public/images/SCR-20240228-lqlm.jpeg)
-
-### Mobile
-
-[![Index.ejs](public/images/SCR-20240228-muwh.png)](link_to_image)
-[![Index.ejs nav opened](public/images/SCR-20240228-msob.png)](link_to_image)
-[![Index.ejs sign up "/#"](public/images/SCR-20240228-mwyj.png)](link_to_image)
-[![Recipes.ejs](public/images/SCR-20240228-msui.png)](link_to_image)
-[![Classes.ejs not sign in](public/images/SCR-20240228-mtcn.png)](link_to_image)
-[![Classes.ejs sign in](public/images/SCR-20240228-mtna.png)](link_to_image)
 
 ## Contributing
 
